@@ -1,0 +1,20 @@
+.heading{
+  font-family: $font-primary;
+  color: black;
+  text-align: center;
+
+   &--1{
+    font-size: 5rem;
+    letter-spacing: 4px;
+
+   }
+
+   &--2{
+    font-size: 4rem;
+    letter-spacing: 2px;
+
+   }
+
+   &--3{
+  }
+}
