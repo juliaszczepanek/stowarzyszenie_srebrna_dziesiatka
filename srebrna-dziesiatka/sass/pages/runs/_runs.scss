@@ -1,0 +1,13 @@
+.runs {
+    padding: 10rem 10rem 20rem 10rem;
+    
+    background: rgba(0,0,0,.05);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  
+    
+    @include respond-to (mobile-small){
+      padding: 4rem 2rem 8rem 2rem;
+    }
+  }

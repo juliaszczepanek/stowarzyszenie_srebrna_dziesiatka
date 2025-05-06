@@ -1,0 +1,40 @@
+.ticker {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    padding: 2rem 0;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+  
+    &__track {
+      display: flex;
+      gap: 6rem;
+      animation: scroll var(--duration, 60s) linear infinite;
+    }
+  
+    &__logo {
+      height: 60px;
+      object-fit: contain;
+      transition: opacity .3s, filter .3s;
+  
+
+      @include respond-to(tablet-large){
+        height: 40px;
+      }
+
+      @include respond-to(mobile-medium){
+        height: 30px;
+      }
+
+      &:hover {
+        opacity: 1;
+        filter: none;
+      }
+    }
+  }
+  
+  @keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--track-w))); }
+  }
+  
